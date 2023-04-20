@@ -51,7 +51,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Фотогалерея", 
-		"/", 
+		"/stocks/", 
 		Array(), 
 		Array(), 
 		"" 

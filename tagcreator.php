@@ -13,12 +13,6 @@ $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement()){ 
    $arProps = $ob->GetProperties();
    $strTags=$arProps[MAT_CODE]['VALUE'].', '.$arProps[MANUF_CODE]['VALUE'];
-   echo $strTags;
-   /*if(strcmp($ob->GetFields()['TAGS'],$strTags)!=0)
-    {
-       $el = new CIBlockElement;
-       $result = $el->Update($ob->GetFields()['ID'],Array('TAGS'=>$strTags));
-    }*/
 }
 echo "Done!";
 ?>
